@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARTHA SAI KRISHNA - DEVELOPER PORFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400..650&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(0, 46, 99, 0.982);
+            /*rgba(0, 65, 138, 0.982);*/
+            color: white;
+            font-family: "Oswald", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 66px;
+            background-color: rgba(21, 21, 90, 0.816);
+        }
+
+        .headername {
+            font-size: 1.6rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 12px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            color: rgb(76, 142, 218);
+        }
+
+        .linkedinimg {
+            width: 20px;
+            border-radius: 3.4px;
+            margin-top: 4px;
+        }
+
+        .githubimg {
+            width: 30px;
+            margin-top: -2px;
+        }
+
+        .instaimg {
+            width: 19px;
+            margin-top: 3px;
+        }
+
+        .left {
+            font-size: 1.2rem;
+        }
+
+        .sectionone {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 50px 0px;
+        }
+
+        .sectionone>div {
+            width: 30%;
+        }
+
+        .leftsec {
+            font-size: 2rem;
+            margin: 60px 0px;
+        }
+
+        .leftsec .btn {
+            padding: 10px;
+            background-color: #20446d;
+            color: white;
+            border: 1px solid #052a55a6;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.5s ease-out;
+        }
+
+        .leftsec .btn :hover {
+            padding: 12px;
+            background-color: #112f50;
+            transform: scale(1.1);
+
+        }
+
+        .namecolor {
+            color: #ae7fbd;
+        }
+
+        #element {
+            color: #ae7fbd;
+        }
+
+        .rightsec img {
+            width: 80%;
+            margin-left: 100px;
+            display: block;
+        }
+
+        main hr {
+            height: 1.2px;
+            border: 0;
+            background-color: rgb(55, 55, 165);
+            margin: 20px 70px;
+        }
+
+
+        .divtag {
+            background-color: #05006761;
+            width: 1.5px;
+            height: 150px;
+            margin: 30px 80px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #071b33;
+        }
+
+        .footer {
+            display: flex;
+            padding: 20px 50px;
+            justify-content: space-between;
+        }
+
+        .footer ul li {
+            list-style: none;
+        }
+
+        .textstyle {
+            font-size: small;
+        }
+
+        .footerflex {
+            display: flex;
+        }
+
+        footer .copyrightsspan {
+            margin: 20px 470px;
+            color: #2f4b65;
+
+        }
+
+        .emailpart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .emailpart .btn {
+            padding: 10px 15px;
+            background-color: #20446d;
+            color: white;
+            border: 1px solid #052a55a6;
+            border-radius: 0 15px 15px 0;
+            cursor: pointer;
+
+        }
+
+        .email {
+            padding: 10px 40px;
+            background-color: #cee4ff;
+            color: rgb(32, 32, 32);
+            border: 2px solid #000000ad;
+            border-radius: 15px 0px 0px 15px;
+        }
+
+        footer .maildec {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .sectiontwo {
+            height: 60vh;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .sec2up{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sec2down{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .sec2div{
+            padding: 5px;
+            background-color: #20446d;
+            color: white;
+            border: 1px solid #052a55a6;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .timebox {
+            color: white;
+            width: 130vh;
+            height: 180px;
+            background-color: #071b33;
+            justify-content: space-around;
+            margin: 35px auto;
+            display: flex;
+            align-items: center;
+            border: 0.2px solid black;
+            border-radius: 10px;
+            background-image: url(lovepik-background-of-science-and-technology-code-image_400134324.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: cover;
+            background-blend-mode:hard-light;
+        }
+
+        .skillsize {
+            width: 100px;
+            height: 100px;
+            background-color: #0ebeef5e;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow:8px 6px 5px 2px #00000075;
+        }
+
+        /* .skillsize:hover{
+            box-shadow:8px 6px 5px 4px #ffffff8c;
+        } */
+
+        .fa-brands {
+            font-size: 80px;
+
+        }
+
+        .fa-html5 {
+            margin: 9px 20px;
+        }
+
+        .fa-html5:hover {
+            color: orangered;
+        }
+
+        .fa-css3-alt {
+            margin: 9px 20px;
+        }
+        .fa-css3-alt:hover{
+            color: rgba(22, 22, 255, 0.517);
+        
+        }
+
+        .fa-js {
+            margin: 9px 16px;
+            
+        }
+        .fa-js:hover{
+            color: yellow;
+            
+        }
+
+
+        .fa-react {
+            margin: 9px 10px;
+    
+        }
+
+        .fa-react:hover {
+            color: #74C0FC;
+           
+    
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <span class="headername">Partha Sai Krishna's </span> Porfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>PROJECTS</li>
+                    <li>CONTACT ME</li>
+                    <li>
+                        <img src="linkedin icon.png" class="linkedinimg" alt="" onclick="" />
+                    </li>
+                    <li><img src="pngwing.com.png" class="githubimg" alt="" /></li>
+                    <li><img src="instagram.png" onclick="https://www.instagram.com/sai._.krishna._.11/" class="instaimg" alt="" /></li>
+                    <li></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sectionone">
+            <div class="leftsec">
+                Hi!<br />
+                My Name Is <span class="namecolor">Partha Sai Krishna.</span> <br />
+                And I'm A <span id="element"></span><br>
+                <button class="btn">My Resume
+                </button>
+                <button class="btn">My Github</button>
+            </div>
+
+            <div class="rightsec">
+                <img src="1.png" alt="" />
+            </div>
+        </section>
+        <hr />
+        <section class="sectiontwo">
+            <span class="sec2up">What I Have Learned So Far </span>
+           <div class="sec2div"><h1 class="sec2down">MY SKILLS</h1></div> 
+            <div class="timebox" background="instagram.png">
+                <div class="htmlkey , skillsize"><i class="fa-brands fa-html5"></i><h4 style="margin:5px 28px;">HTML</h4></div>
+                <div class="csskey, skillsize"><i class="fa-brands fa-css3-alt"></i><h4 style="margin:5px 36px;">CSS</h4></div>
+                <div class="jskey, skillsize"><i class="fa-brands fa-js"></i><h4 style="margin:5px 11px;">JAVASCRIPT</h4></div>
+                <div class="reactkey, skillsize"><i class="fa-brands fa-react"></i><h4 style="margin:5px 28px;">REACT</h4></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footerone">
+                <h3>Partha Sai Krishna's Portfolio</h3>
+                <div class="footerflex">
+                    <span style="font-size: 10px; margin: 1.51px">Get In Touch:</span>
+                    <img src="instagram.png" width="11px" height="11px" alt="" style="margin: 5px 2px" />
+                    <img src="linkedin icon.png" width="11px" height="11px"
+                        style="margin: 5px 2px; border-radius: 3.4px" />
+                    <img src="pngwing.com.png" style="margin-top: 20px 3px" width="20px;" />
+                </div>
+            </div>
+
+            <div class="footertwo , textstyle">
+                <ul>
+                    <li style="color: #253f5d">Jump Into</li>
+                    <li>
+                        <pre> Home</pre>
+                    </li>
+                    <li>
+                        <pre> About</pre>
+                    </li>
+                    <li>
+                        <pre> Services/Projects</pre>
+                    </li>
+                    <li>
+                        <pre> Hire Me</pre>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerthree , textstyle">
+                <ul>
+                    <li style="color: #253f5d">Recomended Courses</li>
+                    <li>
+                        <pre>  Javascript</pre>
+                    </li>
+                    <li>
+                        <pre>  Reactjs</pre>
+                    </li>
+                    <li>
+                        <pre>  DSA</pre>
+                    </li>
+                    <li>
+                        <pre>  Java</pre>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerfour , textstyle">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Hire Me</li>
+                </ul>
+            </div>
+
+            <div class="footerfive textstyle">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Hire Me</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <span class="maildec"> Get IN Touch | HireMe | Support</span>
+        <div class="emailpart">
+
+            <input type="email" title="Enter Your email
+            " class="email">
+            <button type="submit" class="btn">Send</button>
+        </div>
+        <span class="copyrightsspan">Copyrights &#169; ParthasaikrishnaPorfolio.com | All rights Reserved.</span>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+            strings: [
+                "Web Designer.",
+                "Vedio Editor.",
+                "Photographer.",
+                "Web Developer.",
+            ],
+            typeSpeed: 100,
+        });
+    </script>
+    <!------------------------------------------------------>
+</body>
+
+</html>
